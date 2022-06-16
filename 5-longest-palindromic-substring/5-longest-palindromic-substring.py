@@ -22,18 +22,3 @@ class Solution:
         
         return palindrome
             
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-#han3ml eh ?
-# han pass 3al string char by char 
