@@ -6,16 +6,14 @@
 
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
-        #traverse over the linkedlist then store in hashset
-        #if the item to be stored already exists -> true
+        slow = head
+        fast = head
         
-        exist = set()
-        current = head
-        while current:
-            if current in exist:
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
                 return True
-            exist.add(current)
-            current = current.next
         return False
             
         
