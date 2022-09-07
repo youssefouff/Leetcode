@@ -3,10 +3,9 @@ class Solution:
         n = bin(n).replace("0b","")
         print(n)
         for i in range(1,(len(n))):
-            if n[i] != n[i-1]:
-                continue
-            else:
+            if n[i] == n[i-1]:
                 return False
         return True
+            
         
         
