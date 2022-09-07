@@ -1,10 +1,9 @@
 class Solution:
     def findMiddleIndex(self, nums: List[int]) -> int:
-        currSum = sum(nums)
-        curr = 0
+        current = 0
         for i in range (len(nums)):
-            curr += nums[i]
-            if curr - nums[i] == currSum - curr:
+            current += nums[i]
+            if current - nums[i] == sum(nums) - current:
                 return i
         return -1
         
